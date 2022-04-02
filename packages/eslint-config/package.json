@@ -1,12 +1,12 @@
 {
-  "name": "@pancakeswap/eslint-config-pancake",
+  "name": "@vknighthub/eslint-config-vknighthub",
   "version": "1.2.0",
-  "description": "Eslint config for PancakeSwap",
+  "description": "Eslint config for vKnightHub",
   "main": "lib/index.js",
   "files": [
     "lib"
   ],
-  "repository": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/eslint-config-pancake",
+  "repository": "https://github.com/vknighthub/vknighthub-app/tree/main/packages/eslint-config",
   "license": "MIT",
   "author": "RabbitDoge",
   "private": false,

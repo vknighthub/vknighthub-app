@@ -1,19 +1,18 @@
+import { FixedNumber } from '@ethersproject/bignumber'
 import BigNumber from 'bignumber.js'
-import { useState, useCallback } from 'react'
 import { BSC_BLOCK_TIME } from 'config'
 import ifoV2Abi from 'config/abi/ifoV2.json'
 import ifoV3Abi from 'config/abi/ifoV3.json'
 import tokens from 'config/constants/tokens'
 import { Ifo, IfoStatus } from 'config/constants/types'
-import { FixedNumber } from '@ethersproject/bignumber'
-
+import { useCallback, useState } from 'react'
 import { useLpTokenPrice, usePriceCakeBusd } from 'state/farms/hooks'
 import { BIG_ZERO } from 'utils/bigNumber'
 import { multicallv2 } from 'utils/multicall'
 import { PublicIfoData } from '../../types'
 import { getStatus } from '../helpers'
 
-// https://github.com/pancakeswap/pancake-contracts/blob/master/projects/ifo/contracts/IFOV2.sol#L431
+
 // 1,000,000,000 / 100
 const TAX_PRECISION = FixedNumber.from(10000000000)
 
